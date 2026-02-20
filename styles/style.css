@@ -1,0 +1,350 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  background-color: #1a1a1f;
+  font-family: "Roboto", sans-serif;
+}
+/* Style the video: 100% width and height to cover the entire window
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+} */
+/* global reset */
+*,
+*:active,
+*:focus,
+*:hover {
+  outline: none !important;
+}
+
+/* 
+a {
+    text-decoration: none !important;
+    list-style: none;
+} */
+
+.text-pink {
+  color: #d8235a !important;
+}
+
+.text-grey {
+  color: #757575;
+}
+
+.text-heading {
+  font-family: "Varela Round", sans-serif;
+}
+
+.bg-pink {
+  background-color: #d8235a;
+}
+.alert {
+  transition: 0.7s !important;
+}
+/* Navigation bar  *****************************/
+.navbar-brand img {
+  height: 5vh;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  color: white !important;
+  transition: 0.7s ease;
+  font-family: "Varela Round", sans-serif;
+}
+
+.nav-link:hover {
+  color: #d8235a !important;
+}
+
+.active a {
+  color: #d8235a !important;
+  border-bottom: solid 1px #d8235a !important;
+  transition: 0.7s ease-out;
+}
+.nav-user {
+  color: #d8235a !important;
+}
+
+/* search bar */
+.search-input,
+.log-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 1px #d8235a;
+}
+
+.search-input:focus {
+  background-color: transparent !important;
+  border-bottom: solid 1px #d8235a !important;
+  color: white;
+}
+
+.btn-search {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-search:hover {
+  cursor: pointer;
+}
+
+.btn-search:focus {
+  border: none;
+  background-color: transparent;
+}
+
+.fa-search {
+  color: rgba(255, 255, 255, 0.842);
+  transition: 0.7s;
+}
+
+.fa-search:hover {
+  color: #d82359;
+}
+
+/* logim/ signup modal */
+.fade {
+  background-color: #1a1a1ffb;
+}
+
+.modal-shadow {
+  box-shadow: 2px 2px 30px 1px #d823593f;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-header h4 {
+  font-weight: 300;
+}
+
+.close:hover {
+  color: #d82359;
+}
+
+.modal-content {
+  background-color: #1a1a1fe1;
+}
+
+.modal-link {
+  font-weight: 300;
+}
+
+.modal-link::first-letter {
+  text-transform: uppercase;
+}
+
+/* movie description caret down icon*/
+.fa-caret-down {
+  color: white;
+  transition: 0.7s ease;
+}
+
+.fas-toggle {
+  transform: rotateX(180deg);
+}
+
+.btn-pink {
+  background-color: #d8235a;
+  color: white;
+}
+
+.btn-pink:hover {
+  box-shadow: 0 0 20px 2px #d82359a9;
+  color: white;
+}
+
+.dob-input {
+  border: solid 1px #d8235a;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* sort movies form */
+.search-genre {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-selection {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+
+/* movie posters on home page */
+.card-bgc {
+  background-color: transparent;
+  border: none;
+}
+
+.card-border {
+  border: 1px solid #d8235a;
+}
+
+.card-description {
+  cursor: pointer;
+  font-weight: 300;
+  color: white;
+}
+
+.card-text {
+  font-weight: 300;
+}
+
+/* arrow up */
+.fa-arrow-up {
+  position: fixed;
+  right: 5vw;
+  bottom: 10vh;
+  color: #d82359af;
+  z-index: 999 !important;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.fa-arrow-up:hover {
+  color: #d8235a;
+  animation: arrow-up 0.4s ease-out infinite;
+}
+
+.arrow-active {
+  opacity: 1;
+}
+
+@keyframes arrow-up {
+  100% {
+    bottom: 12vh;
+  }
+}
+
+/* GDPR */
+.gdpr {
+  position: fixed;
+  left: 40px;
+  bottom: 60px;
+  max-width: 300px;
+  font-weight: 300;
+}
+/* THEATRES **************************************/
+.location {
+  position: relative;
+  top: -5vh;
+  left: -1vw;
+}
+
+.address {
+  position: relative;
+  top: -4vh;
+  left: -0.5vw;
+  font-weight: 300;
+}
+
+.address:hover {
+  text-decoration: none;
+}
+
+.address p {
+  transition: 0.7s;
+}
+
+.address p:hover {
+  color: #d82359 !important;
+}
+
+/* PLAY **************************************/
+
+.play-body {
+  height: 100vh;
+  background: -webkit-linear-gradient(-4deg, #dfaf47 30%, rgba(0, 0, 0, 0) 30%),
+    -webkit-linear-gradient(5deg, #008cff 75%, #1a1a1f 75%);
+  background: -o-linear-gradient(-4deg, #dfaf47 30%, rgba(0, 0, 0, 0) 30%),
+    -o-linear-gradient(5deg, #008cff 75%, #1a1a1f 75%);
+  background: -moz-linear-gradient(-4deg, #dfaf47 30%, rgba(0, 0, 0, 0) 30%),
+    -moz-linear-gradient(5deg, #008cff 75%, #1a1a1f 75%);
+  background: linear-gradient(-4deg, #dfaf47 30%, rgba(0, 0, 0, 0) 30%),
+    linear-gradient(5deg, #008cff 75%, #1a1a1f 75%);
+}
+
+.play-frame {
+  width: 100%;
+  height: 400px;
+}
+
+/* Contact **************************************/
+.contact-map {
+  width: 100% !important;
+  height: 400px;
+  opacity: 0.7;
+  transition: 0.7s;
+}
+.contact-map:hover {
+  opacity: 1;
+  transition: 0.7s ease;
+}
+
+.bg-map {
+  margin-top: 50px;
+}
+
+/* ADMIN PANEL **************************************/
+
+.form-cms .active {
+  background-color: transparent !important;
+  border: 1px solid #d82359;
+  border-radius: 5px;
+  color: #d82359 !important;
+}
+
+.admin-panel .nav-link {
+  transition: 0.7s;
+}
+
+.admin-content .active {
+  border: none;
+}
+
+.admin-panel ::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+}
+
+.admin-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* footer ************************/
+footer,
+.bg-map {
+  background-color: #17171b;
+}
+footer a {
+  text-decoration-style: none;
+  color: white;
+}
+footer a:hover {
+  transition: 0.3s;
+  text-decoration-style: none !important;
+  color: #d8235a !important;
+}
